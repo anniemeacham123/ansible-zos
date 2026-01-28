@@ -1,0 +1,5 @@
+    - name: Fail if z/OS job returns condition code above a given value
+      fail:
+        msg: >
+          "Job {{ jobname }} ended with cond code {{ cond_code }} ({{ message }})"
+        when: "int {{ cond_code }} | int > {{ acceptable_cond_code }}"

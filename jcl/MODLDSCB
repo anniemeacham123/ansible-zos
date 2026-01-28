@@ -1,0 +1,11 @@
+//IBMUSERG JOB ,'MODEL DSCB',CLASS=A,MSGCLASS=X,
+//         MSGLEVEL=(1,1),NOTIFY=&SYSUID
+//*********************************************************************
+//* Create a model DSCB for a QSAM data set.
+//*********************************************************************
+//MODDSCB EXEC PGM=IEFBR14
+//DD1     DD  DSN=&SYSUID..MODEL.DSCB120,
+//          DISP=(MOD,CATLG,DELETE),
+//          DCB=(DSORG=PS,RECFM=FB,LRECL=120,BLKSIZE=24000),
+//          SPACE=(TRK,(0,0)),
+//          UNIT=SYSDA

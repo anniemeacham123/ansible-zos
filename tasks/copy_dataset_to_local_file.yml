@@ -1,0 +1,5 @@
+    - name: Write content of previously retrieved z/OS dataset to a local file
+      copy:
+        dest: "{{ pathname }}"
+        content: "{{ dataset_to_copy.content | join('\n') }}"
+      delegate_to: localhost

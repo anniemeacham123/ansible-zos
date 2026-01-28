@@ -1,0 +1,20 @@
+//IBMUSER2 JOB ,'HAMLET',CLASS=A,
+//         MSGCLASS=X,
+//         MSGLEVEL=(1,1),
+//         NOTIFY=&SYSUID
+//SOLIL1   EXEC PGM=IEBGENER
+//SYSIN    DD DUMMY
+//SYSOUT   DD SYSOUT=*
+//SYSPRINT DD SYSOUT=*
+//SYSUT1   DD *
+To be, or not to be, that is the question:
+Whether 'tis nobler in the mind to suffer
+The slings and arrows of outrageous fortune
+Or to take arms against a sea of troubles
+And by opposing, end them.
+/*
+//SYSUT2   DD DSN=&SYSUID..TEST.GDG(+1),
+//            DCB=&SYSUID..MODEL.DSCB80,
+//            DISP=(NEW,CATLG,DELETE),
+//            SPACE=(TRK,(1,1),RLSE),
+//            UNIT=SYSDA

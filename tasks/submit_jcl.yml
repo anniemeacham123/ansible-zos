@@ -1,0 +1,8 @@
+    - name: Submit JCL to z/OS
+      zos_job_submit:
+        src: "{{ src }}"
+        location: DATA_SET
+        wait_time_s: 60
+        return_output: true
+      register: job_output
+      failed_when: "job_output.jobs[0].ret_code.code | int > acceptable_cond_code"

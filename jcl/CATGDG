@@ -1,0 +1,17 @@
+//IBMUSERG JOB ,'CATLG GDG',CLASS=A,MSGCLASS=X,
+//         MSGLEVEL=(1,1),NOTIFY=&SYSUID
+//*********************************************************************
+//* Catalog a Generation Data Group, deleting the old one if it exists.
+//*********************************************************************
+//CATGDG    EXEC PGM=IDCAMS
+//SYSPRINT  DD SYSOUT=*
+//SYSIN     DD *
+ DELETE IBMUSER.TEST.GDG GDG
+ IF LASTCC < 9 THEN -
+   DEFINE GDG ( -
+                NAME(IBMUSER.TEST.GDG) -
+                LIMIT(50) -
+                NOEMPTY -
+                SCRATCH -
+              )
+/*

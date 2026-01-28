@@ -1,0 +1,89 @@
+These are raw notes to help me develop presentation material. 
+
+IBM documentation: z/OS Basic Skills 
+https://www.ibm.com/docs/en/zos-basic-skills
+
+Impressions:
+
+This manual is written like a children's book, except for the lack of pictures. I don't know why they wrote it in this style. 
+
+The information is high-level and very lightweight, often oversimplifying things to the point that the usefulness and accuracy suffer. 
+
+"The value of the mainframe today" 
+https://www.ibm.com/docs/en/zos-basic-skills?topic=concepts-value-mainframe-today 
+
+The section doesn't really talk about the "value" of mainframes. Instead, it explains what mainframes are, except the material is at such a high level of abstraction that it doesn't inform. 
+
+"The S/360: A turning point in mainframe history" 
+
+The section merely states that mainframes were developed starting in the 1950s. It doesn't mention the two factors that arguably made the System/360 a "turning point":
+
+1. The commitment to backward compatibility
+2. The commitment to security 
+
+To self: Provide a brief explanation of why those two factors were important, how they have affected the evolution of mainframes since then, and some of the implications for working with these systems today.
+
+"Mainframe architecture: Secure, compatible, and still evolving"
+
+A true statement that is not elaborated in the section. There's some salesy talk about how mainframes are "the most stable, secure, and compatible of all computing platforms," but no explanation of why that may be so. 
+
+Compatible with what? Does the statement tie back to backward compatibility? 
+
+"Mainframes in our midst: You use one every day"
+
+The statement is not supported or explained in the section. 
+
+To self: Mention that mainframes are involved to some extent in about 80% of financial transactions globally, and that they are the systems of record in many government agencies and large corporations. 
+
+"What is a mainframe? It's a style of computing" 
+
+This section is nonsense. 
+
+To self: Explain that mainframes were invented in an era when centralized computing was the norm. As network computing became the norm starting in the mid-1980s, mainframe technology evolved to support it. 
+
+"Who uses mainframes and why do they do it?"
+
+This section is nonsense. 
+
+To self: 
+
+Enterprises and governments that need high security and/or high volume transaction processing and/or massive data storage may consider mainframes as a way to support these requirements. Mainframes are expensive to own or lease, so an organization must have significant processing, security, and/or data management requirements to justify the cost. 
+
+Many mainframe users began to depend on the technology when it was younger, and have continued to use it over the years. Support for backward compatibility has been a double-edged sword. The impetus for it in the 1960s was that whenever a company needed to increase their computing capacity, they had to rewrite all their applications to work on the new computer. 
+
+In 1964, IBM committed to backward compatibility in its System/360 line, assuring customers they could upgrade their systems without worrying about their applications. 
+
+The good news is that backward compatibility enabled companies to preserve their investment in software as they continued to upgrade their computer systems. The bad news is that many companies actually did so, and got into a situation where some of their mission critical applications were no longer maintainable and yet couldn't be replaced or modernized short of an expensive and time-consuming effort. Today, some critical applications have been in production more than 40 years.
+
+There used to be tens of thousands of mainframe installations, but as other technologies matured it became feasible to shift small and medium workloads onto less-expensive platforms. 
+
+For large installations, moving the work to other platforms has proven to be impractical for both technical and financial reasons. At the same time, mainframes have steadily evolved to embrace new technologies, reducing the need to consider retiring them altogether.
+
+As a result, only large mainframe installations exist today, in contrast with earlier years when mainframes came in various sizes from small to large. 
+
+"Mainframe workloads: Batch and online transaction processing" 
+
+This section is good. Needs elaboration.
+
+To self:
+
+Clarify that an IBM Z can function more-or-less as an entire cloud environment, not just as a single instance in such an environment. When you call an API, you can't tell whether it's serviced on a mainframe or a server instance in a cloud environment like AWS. 
+
+The IBM Z can concurrently support traditional or "legacy" environments - z/OS, z/VSE, and z/TPF - as well as Linux. It also supports two type 1 hypervisors - the legacy z/VM and the modern KVM. 
+
+When mainframers talk about "online processing" they may be referring to OLTP environments like CICS and IMS/TM rather than "online" in the sense of "on the Internet." Originally, "online" just meant "not batch."
+
+"Roles in the mainframe world" 
+
+This section doesn't communicate anything useful.
+
+"What are mainframe operating systems?" 
+
+This section is probably unnecessary for the target audience of the documentation. 
+
+"Mainframe hardware concepts"
+https://www.ibm.com/docs/en/zos-basic-skills?topic=concepts-mainframe-hardware 
+
+
+
+
