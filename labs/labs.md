@@ -243,7 +243,7 @@ Develop an Ansible playbook to create these data sets on the z/OS instance. You 
 
 For all except the program library, add a member after allocating the PDSE.
 
-- Data Set            Member Name     Contents
+| Data Set          |  Member Name   |  Contents |
 
 - COBOL.SOURCE        README          COBOL SOURCE CODE GOES HERE
 - COBOL.COPYLIB       README          COBOL COPYBOOKS GO HERE 
